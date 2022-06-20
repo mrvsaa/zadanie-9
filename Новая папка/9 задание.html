@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+    <script>
+        /* 1 задание */ console.log("1 задание")
+        const num = 345
+        const bum = num.toString(2)
+        console.log(Number.parseInt(bum,10))
+
+        /* 2 задание */ console.log("2 задание")
+        function krat(x, y)
+        {
+            x = Math.abs(x)
+            y = Math.abs(y)
+            while(y)
+            {
+                let t = y
+                y = x % y
+                x = t
+            }
+            return x
+        }
+        console.log(krat(3,15))
+
+        /* 3 задание */ console.log("3 задание")
+            for (let i = 1000; i <= 9999; i++) 
+            {
+                let a = i.toString();
+                if (+a[0] + +a[1] === +a[2] + +a[3])
+                    var s = s + a + "<br/>";
+            }
+            console.log(s);
+
+        /* 4 задание */ console.log("4 задание")
+        function shar(r)
+               var a = prompt("Введите число:");
+                {
+                if((4 * Pi * r * r * r) / 3);
+                }
+                  let r1, r2, r3;
+                  alert('R1 = '+r1);
+                  alert('R2 = '+r2);
+                  alert('R3 = '+r3);
+                  console.log('Z = ', (shar(r1) + shar(r2) + shar(r3)));
+
+        /* 5 задание */ console.log("5 задание")
+        function d(arr){
+                      let num = arr.reduce((acc, curr)=>{
+                            return acc + curr
+                              }, 0) / arr.length;  
+                                  arr = arr.map((k)=>{
+                                    return (k - num) ** 2
+                                  })
+                                     let sum = arr.reduce((acc, curr)=> acc + curr, 0);
+                                     let variance = sum / arr.length
+                                     return Math.sqrt(sum / arr.length)
+                                    }
+                                    alert(d([1, 2, 3, 4, 5]))
+                                    alert(d([23, 4, 6, 457, 65, 7, 45, 8]))
+
+
+        /* 6 задание */ console.log("6 задание")
+        for (let i1 = 100000; i1 <= 999999; i1++) 
+            {
+                let a1 = i1.toString();
+                if (+a1[0] + +a1[1] + +a1[2] === +a1[3] + +a1[4] + +a1[5])
+                    var s1 = s1 + a1 + "<br/>";
+            }
+            console.log(s1);
+
+        /* 7 задание */ console.log("7 задание")
+        function Palindrome(numm) 
+        {
+            let nummToStringArray = numm.toString();
+            var vs = nummToStringArray.length;
+            if (vs < 2) 
+            {
+                return "Это число является полиндромом"
+            }
+            else 
+            {
+                for (var i = 0; i < vs / 2; i++) 
+                {
+                    if (nummToStringArray[i] !== nummToStringArray[vs - 1 - i]) 
+                    {
+                        return "Это число НЕ является полиндромом";
+                    }
+                    return "Это число является полиндромом"
+                }
+            }    
+        }
+        console.log(Palindrome(565));
+        console.log(Palindrome(47));
+     
+
+    </script>
+</body>
